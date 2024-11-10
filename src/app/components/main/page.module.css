@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.hero_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    padding: 0rem 10rem;
+    padding-left: 10rem;
+    position: relative;
+    font-family: "Inter", serif;
+    background-color: #fff;
+}
+
+.hero_section .img1{
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+    position:absolute;
+    top: 10em;
+    left: 30em;
+}
+.hero_section .img2{
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+    position:absolute;
+    bottom: 10em;
+    right: 15em;
+}
+.hero_section .img3{
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+    position:absolute;
+    top: 10em;
+    right: 20em;
+}
+.hero_section .img4{
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+    position:absolute;
+    top: 55em;
+    right: 60em;
+}
+.hero_section .img5{
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+    position:absolute;
+    bottom: 10em;
+    left: 50em;
+}
+.hero_section .img6{
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+    position:absolute;
+    top: 30em;
+    left: 80em;
+}
+
+.item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 10em;
+    & h2{
+        font-size: 5.5em;
+        font-weight: 700;
+        text-transform: capitalize;
+        & span{
+            color: #FFB400;
+        }
+    }
+    & p{
+        font-size: 2.2em;
+        width: 25em;
+        color: #767676;
+    }
+    & button{
+        font-size: 2em;
+        text-transform: uppercase;
+        width: 10em;
+        padding: 0.7em 2em;
+        background-color: #FFB400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.7em;
+        border-radius: 0.5em;
+        border: 0.1em solid #FFB400;
+        margin-top: 2em;
+        & img{
+            width: 1em;
+            height: 1em;
+            object-fit: cover;
+        }
+    }
+    & button:hover{
+        background-color: transparent;
+        /* color: #FFB400; */
+        border: 0.1em solid #FFB400;
+        transition: all 0.5s linear;
+    }
+}
+
+.item2{
+    & img{
+        width: 40em;
+        height: 60em;
+        object-fit: cover;
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (width < 1420px) {
+    .hero_section{
+        font-size: 9.5px;
+    }
+  }
+  @media (width < 1320px) {
+    .hero_section{
+        font-size: 9px;
+    }
+  }
+  @media (width < 1220px) {
+    .hero_section{
+        font-size: 8.5px;
+    }
+  }
+  @media (width < 1120px) {
+    .hero_section{
+        font-size: 8px;
+    }
+  }
+  @media (width < 1020px) {
+    .hero_section{
+        font-size: 7px;
+    }
+  }
+  @media (width < 920px) {
+    .hero_section{
+        font-size: 6.5px;
+    }
+  }
+  @media (width < 820px) {
+    .hero_section{
+        font-size: 5.5px;
+    }
+  }
+  @media (width < 720px) {
+    .hero_section{
+        font-size: 4.5px;
+    }
+  }
+  @media (width < 620px) {
+    .hero_section{
+        font-size: 4px;
+    }
+  }
+  @media (width < 520px) {
+    .hero_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0em 0em;
+        font-size: 6px;
+        & .item1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & h2{
+                text-align: center;
+            }
+            & p{
+                text-align: center;
+            }
+        }
+        & .img6{
+            position: absolute;
+            left: 55em;
+            top: 50em;
+        }
+        & .img3{
+            position: absolute;
+            left: 10em;
+            top: 80em;
+        }
+    }
+  }
+  @media (width < 470px) {
+    .hero_section{
+        font-size: 5px;
+    }
+  }
+  @media (width < 420px) {
+    .hero_section{
+        font-size: 4.5px;
+    }
+  }
+  @media (width < 380px) {
+    .hero_section{
+        font-size: 4px;
+    }
+  }
+  @media (width < 320px) {
+    .hero_section{
+        font-size: 4px;
+    }
+  }
